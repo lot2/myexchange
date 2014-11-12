@@ -2,9 +2,14 @@
 {% block content %}
 <div class='container' style="width: 100%">
     <div>
-        <span class="caret"></span>报价面板
         <div>
-            <table class="table">
+            <div class="btn-group" style="width: 5%"><span class="caret"></span>报价面板</div>
+            <div class="btn-group" style="width:92%;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+            <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </div>
+        <p></p>
+        <div>
+            <table class="table table-condensed">
                 <tr>
                     <th>合约</th>
                     <th>最后价格</th>
@@ -25,7 +30,11 @@
                 </tr>
             </table>
         </div>
-        <span class="caret"></span>按钮
+        <div>
+            <div class="btn-group" style="width: 5%"><span class="caret"></span>按钮</div>
+            <div class="btn-group" style="width:92%;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+            <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </div>
         <p></p>
         <div>
             <button type="button" class="btn btn-primary btn-xs">添加底层证券</button>
@@ -36,12 +45,151 @@
         </div>
         <p></p>
 {#        <div class="dropup"></div> 改变箭头方向#}
-        <span class="caret"></span>交易中
-        <p></p>
-        <span class="caret"></span>期权链 - EUR
+        <div>
+            <div class="btn-group" style="width: 5%"><span class="caret"></span>交易中</div>
+            <div class="btn-group" style="width:92%;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+            <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </div>
         <p></p>
         <div>
-
+            <div class="btn-group" style="width: 7%"><span class="caret"></span>期权链-EUR</div>
+            <div class="btn-group" style="width:90%;height:1px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+            <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </div>
+        <p></p>
+        <div>
+            <!-- Single button -->
+            行使价<div class="btn-group">
+              <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                多个 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">多个</a></li>
+                <li><a href="#">单个</a></li>
+{#                <li><a href="#">Something else here</a></li>#}
+{#                <li class="divider"></li>#}
+{#                <li><a href="#">Separated link</a></li>#}
+              </ul>
+            </div>&nbsp;&nbsp;
+            <!-- Single button -->
+            到期日<div class="btn-group">
+              <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                NOV 07'14 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">NOV 07'14</a></li>
+{#                <li><a href="#">Another action</a></li>#}
+{#                <li><a href="#">Something else here</a></li>#}
+{#                <li class="divider"></li>#}
+{#                <li><a href="#">Separated link</a></li>#}
+              </ul>
+            </div>&nbsp;&nbsp;
+            <!-- Single button -->
+            交易所<div class="btn-group">
+              <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                GLOBEX <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">GLOBEX</a></li>
+{#                <li><a href="#">Another action</a></li>#}
+{#                <li><a href="#">Something else here</a></li>#}
+{#                <li class="divider"></li>#}
+{#                <li><a href="#">Separated link</a></li>#}
+              </ul>
+            </div>&nbsp;&nbsp;
+            <!-- Single button -->
+            交易等级<div class="btn-group">
+              <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                多个 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">单个</a></li>
+{#                <li><a href="#">Another action</a></li>#}
+{#                <li><a href="#">Something else here</a></li>#}
+{#                <li class="divider"></li>#}
+{#                <li><a href="#">Separated link</a></li>#}
+              </ul>
+            </div>
+                <button type="button" class="btn btn-primary btn-xs" style="float: right;margin-right: 5px;">加载我的期权链</button>
+                <button type="button" class="btn btn-primary btn-xs" style="float: right;margin-right: 5px;">清除期权链</button>
+        </div>
+        <p></p>
+        <div>
+            <table class="table table-bordered table-striped table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="5" class="text-center">看涨期权</th>
+                        <th rowspan="2" colspan="2" class="text-center" style="vertical-align: middle">描述</th>
+                        <th colspan="5" class="text-center">看跌期权</th>
+                    </tr>
+                    <tr>
+                        <td>最后价格</td>
+                        <td>涨跌</td>
+                        <td>买价</td>
+                        <td>卖价</td>
+                        <td>隐含波动率%</td>
+                        <td>最后价格</td>
+                        <td>涨跌</td>
+                        <td>买价</td>
+                        <td>卖价</td>
+                        <td>隐含波动率%</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2"><span class="caret"></span>NOV 07'14(6E)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C0.02840</td>
+                        <td></td>
+                        <td>0.02170</td>
+                        <td>0.02370</td>
+                        <td>15.944%</td>
+                        <td colspan="2">1.225</td>
+                        <td>0.00100</td>
+                        <td>+0.00060</td>
+                        <td>0.00080</td>
+                        <td>0.00160</td>
+                        <td>12.602%</td>
+                    </tr>
+                    <tr>
+                        <td>C0.02840</td>
+                        <td></td>
+                        <td>0.02170</td>
+                        <td>0.02370</td>
+                        <td>15.944%</td>
+                        <td colspan="2">1.225</td>
+                        <td>0.00100</td>
+                        <td>+0.00060</td>
+                        <td>0.00080</td>
+                        <td>0.00160</td>
+                        <td>12.602%</td>
+                    </tr>
+                    <tr>
+                        <td>C0.02840</td>
+                        <td></td>
+                        <td>0.02170</td>
+                        <td>0.02370</td>
+                        <td>15.944%</td>
+                        <td colspan="2">1.225</td>
+                        <td>0.00100</td>
+                        <td>+0.00060</td>
+                        <td>0.00080</td>
+                        <td>0.00160</td>
+                        <td>12.602%</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
